@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Food Order</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Delicious Bites</h1>
+    <button id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <main id="menu">
+    <!-- Sample food items -->
+    <div class="food-item">
+      <img src="pizza.jpg" alt="Pizza" />
+      <h3>Margherita Pizza</h3>
+      <p>₹200</p>
+      <button onclick="addToCart('Margherita Pizza', 200)">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+      <img src="burgar.jpg" alt="Burger" />
+      <h3>Cheeseburger</h3>
+      <p>₹150</p>
+      <button onclick="addToCart('Cheeseburger', 150)">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+      <img src="pasta.jpg" alt="Pasta" />
+      <h3>pasta</h3>
+      <p>₹100</p>
+      <button onclick="addToCart('pasta', 80)">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+      <img src="coffee.jpg" alt="coffee" />
+      <h3>Starbugs coffee</h3>
+      <p>₹200</p>
+      <button onclick="addToCart('coffee', 200)">Add to Cart</button>
+    </div>
+
+    
+
+  <aside id="cart-sidebar">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: ₹<span id="cart-total"></span></p>
+    <button onclick="checkout()">Checkout</button>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
